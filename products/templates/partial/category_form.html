@@ -1,0 +1,22 @@
+<form method="POST">
+    {% csrf_token %}
+    <div class="row mb-3">
+        <label for="id_title" class="title">Title:</label>
+        <div class="col-sm-10">
+            {{ form.name }}
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <label for="id_description" class="description">Description:</label>
+        <div class="col-sm-10">
+            {{ form.description }}
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <div class="col-sm-10 offset-sm-2">
+            <button type="submit" class="btn btn-primary">Add Category</button>
+        </div>
+    </div>
+</form>
